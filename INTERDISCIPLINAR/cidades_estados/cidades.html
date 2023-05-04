@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
+    <script src="app.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select name="select_estados" id="select_estados" onchange="carregar_cidade(this.value)">
+            <option value="">SELECIONE UM ESTADO</option>
+            <option value="AM">AMAZONAS</option>
+            <option value="MS">MATO GROSSO DO SUL</option>
+            <option value="CE">CEARA</option>
+            <option value="SP">SAO PAULO</option>
+        </select>
+        <select name="" id="lista" onchange="">
+        
+        </select>    
+        <input type="button" value="EXIBIR" onchange="capturar(this.value)">
+    </form>
+
+</body>
+</html>

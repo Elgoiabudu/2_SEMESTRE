@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>    
+    <link rel="stylesheet" href="../css/login.css">
+    <title>NOTEx - Cadastros</title>
+    <script src="../js/functions.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="item">
+            <h1>NOTEx / Cadastros / Anos</h1>                             
+        </div>
+        <div class="item">
+            <input type="button" class="btn" value="Voltar">                    
+        </div>
+    </div>    
+   
+
+<div><script>
+    function Mudarestado(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>
+<div id="minhaDiv">Conteudo</div>
+<button type="button" onclick="Mudarestado('minhaDiv')">Mostrar / Esconder</button>
+</div>
+<button type="button" onclick="Mudarestado('item_')">Mostrar / Esconder</button>
+
+
+
+
+    <div id="cad_salas" class="container">        
+        <div id="item_" class="item_">
+            <form action="#" name="cad_ano" class="login">                
+                    <h2>CADASTRAR ANO</h2>                    
+                    <input type="text" class="input"  placeholder="DESCRICAO DO ANO">
+                    <input type="number" class="input"  placeholder="CODIGO DO ANO">
+                    <label for="ano">SELECIONE O ANO</label>
+                    <select name="ano" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">2</option>
+                        <option value="4">3</option>
+                        <option value="5">4</option>
+                    </select>
+                    <label for="turma">SELECIONE A TURMA</label>
+                    <select name="turma" id="">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                    </select>
+                    <label for="capacidade"></label>
+                    <input type="number" name="capacidade" class="input" min="1" placeholder="CAPACIDADE FISICA">
+                    <div>
+                        <input type="button" class="button" value="Cadastrar">                    
+                        <input type="button" class="button" value="Limpar">
+                    </div>                    
+            </form>
+        </div>                
+    </div>    
+</body>
+</html>
