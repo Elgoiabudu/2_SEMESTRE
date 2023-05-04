@@ -22,7 +22,7 @@ function cpf(id){
 function TestaCPF(strCPF) {    
     
     strCPF = strCPF.replace(/[^\d]+/g,"");        
-        
+    //Elimina os CPF's conhecidos e verifica o tamanho    
     if (strCPF.length != 11 ||
         strCPF == "00000000000" ||
         strCPF == "11111111111" ||
@@ -43,6 +43,7 @@ function TestaCPF(strCPF) {
             soma += i;       
         }
 
+        //Verificando o primeiro dígito
         var soma = 0;
         var resto;
         for (var i = 1; i <= 9; i++) 
@@ -50,6 +51,8 @@ function TestaCPF(strCPF) {
         resto = (soma * 10) % 11;
         if ((resto == 10) || (resto == 11))  resto = 0;
         if (resto != parseInt(strCPF.substring(9, 10)) ) return false;
+        
+        //Verificando o segundo dígito
         soma = 0;
         for (var i = 1; i <= 10; i++) 
             soma = soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
@@ -59,6 +62,8 @@ function TestaCPF(strCPF) {
         return true;
 }
 
+
+//Função para chamar no evento focusout do input
 function validarCPF(cpf) {
     if (TestaCPF(cpf)) {
         console.log("CPF VALIDO!");
