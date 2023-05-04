@@ -19,3 +19,35 @@ function cpf(id){
     document.getElementById(id).value = v;
 }
 
+function TestaCPF(strCPF) {    
+    
+    strCPF = strCPF.replace(/[^\d]+/g,"");    
+
+    alert(strCPF);
+        
+    if (strCPF.length != 11 ||
+        strCPF == "00000000000" ||
+        strCPF == "11111111111" ||
+        strCPF == "22222222222" ||
+        strCPF == "33333333333" ||
+        strCPF == "44444444444" ||
+        strCPF == "55555555555" ||
+        strCPF == "66666666666" ||
+        strCPF == "77777777777" ||
+        strCPF == "88888888888" ||
+        strCPF == "99999999999"
+        ){
+            return false;            
+        }else{
+            return true;
+        }
+}
+
+function validarCPF(cpf) {
+    if (TestaCPF(cpf)) {
+        console.log("CPF VALIDO!");
+    }else{
+        console.log("CPF INVALIDO!");
+    }
+}
+
