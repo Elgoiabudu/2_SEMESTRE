@@ -3,11 +3,33 @@
 <head>    
     <title>Verifica CPF</title>
     <script src="cpf.js"></script>
+    <script src="getJson.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 </head>
 <body>
 
-    <h2>Informe o CPF</h2><br>
-    <input type="text" name="cpf" id="cpf" size="14" onkeyup="cpf(this.id)" maxlength="14" onfocusout="validarCPF(this.value)">
+    <div>
+        <h2>Informe o CPF</h2><br>
+        <input type="text" name="cpf" id="cpf" size="14" onkeyup="cpf(this.id)" maxlength="14" onfocusout="validarCPF(this.value)">
+    </div>
+
+    <div>
+        <h2>Endereço</h2>
+
+        <label for="cep">CEP</label><br>
+        <input type="text" nome="cep" id="cep" maxlength="8" onfocusout="getJson()"><br>
+
+        <label for="rua">Rua</label><br>        
+        <input type="text" name="rua" id="rua"><br>
+        <label for="bairro">Bairro</label><br>
+        <input type="text" name="bairro" id="bairro"><br>
+        <label for="cidade">Cidade</label><br>
+        <input type="text" name="cidade" id="cidade"><br>        
+        <label for="estado">Estado</label><br>
+        <input type="text" name="estado" id="estado"><br> 
+    </div>
+
+    
     
 </body>
 </html>
