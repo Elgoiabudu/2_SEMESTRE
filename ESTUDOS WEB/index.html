@@ -11,6 +11,7 @@
 
     <div>
         <h2>Informe o CPF</h2><br>
+        <!-- Evento focusout chama a função validarCPF(), e no evento onkeyup molda a máscara de dados(estética) -->
         <input type="text" name="cpf" id="cpf" size="14" onkeyup="cpf(this.id)" maxlength="14" onfocusout="validarCPF(this.value)">
     </div>
 
