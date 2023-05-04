@@ -21,9 +21,7 @@ function cpf(id){
 
 function TestaCPF(strCPF) {    
     
-    strCPF = strCPF.replace(/[^\d]+/g,"");    
-
-    alert(strCPF);
+    strCPF = strCPF.replace(/[^\d]+/g,"");        
         
     if (strCPF.length != 11 ||
         strCPF == "00000000000" ||
@@ -37,10 +35,28 @@ function TestaCPF(strCPF) {
         strCPF == "88888888888" ||
         strCPF == "99999999999"
         ){
-            return false;            
-        }else{
-            return true;
+            return false;
         }
+
+        var soma = 0;
+        for (var i = 0; i < 9; i++) {
+            soma += i;       
+        }
+
+        var soma = 0;
+        var resto;
+        for (var i = 1; i <= 9; i++) 
+            soma = soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+        resto = (soma * 10) % 11;
+        if ((resto == 10) || (resto == 11))  resto = 0;
+        if (resto != parseInt(strCPF.substring(9, 10)) ) return false;
+        soma = 0;
+        for (var i = 1; i <= 10; i++) 
+            soma = soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+        resto = (soma * 10) % 11;
+        if ((resto == 10) || (resto == 11))  resto = 0;
+        if (resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+        return true;
 }
 
 function validarCPF(cpf) {
