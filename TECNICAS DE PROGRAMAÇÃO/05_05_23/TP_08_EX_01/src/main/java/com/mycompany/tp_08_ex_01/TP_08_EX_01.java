@@ -20,6 +20,9 @@ public class TP_08_EX_01 {
     private Label label1, lblr, lbl3;
     private TextField t1, t2, t3;
     
+    public static void main(String[] args) {
+        new TP_08_EX_01().montaTela();
+    } 
     
     
     private void montaTela(){
@@ -45,10 +48,11 @@ public class TP_08_EX_01 {
     
     private void preparaPainelPrincipal() {
         painelPrincipal = new JPanel();
-        painelPrincipal.setLayout(new BoxLayout(painelPrincipal,BoxLayout.PAGE_AXIS));
+        //painelPrincipal.setLayout(new BoxLayout(painelPrincipal,BoxLayout.PAGE_AXIS));
+        FlowLayout f = (FlowLayout)painelPrincipal.getLayout();
         janela.add(painelPrincipal);
         // layout em forma de tabela com 3 linhas e 2 colunas;  
-        painelPrincipal.setLayout(new GridLayout(3,2));
+        //painelPrincipal.setLayout(new GridLayout(3,2));
     }
     
     private void preparaLabel(){
@@ -60,7 +64,7 @@ public class TP_08_EX_01 {
         t1 = new TextField(""); 
         t2= new TextField("");
         lblr = new Label("Resultado=");
-        t3 = new TextField(" ");
+        lbl3 = new Label(" ");
         painelPrincipal.add(t1);
         painelPrincipal.add(t2);
         painelPrincipal.add(lblr);
@@ -92,8 +96,6 @@ public class TP_08_EX_01 {
         painelPrincipal.add(botaoSair);//adiciona botão Sair ao painel
     
     }
-    public static void main(String[] args) {
-        new TP_08_EX_01().montaTela();
-    }    
+       
     
 }
