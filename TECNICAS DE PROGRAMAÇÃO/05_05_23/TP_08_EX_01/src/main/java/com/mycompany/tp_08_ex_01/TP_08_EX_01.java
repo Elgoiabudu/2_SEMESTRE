@@ -4,6 +4,11 @@
 
 package com.mycompany.tp_08_ex_01;
 
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
 /**
  *
  * @author labs
