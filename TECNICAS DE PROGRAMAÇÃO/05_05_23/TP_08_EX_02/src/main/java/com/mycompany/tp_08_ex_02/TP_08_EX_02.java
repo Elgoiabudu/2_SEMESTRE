@@ -55,4 +55,10 @@ public class TP_08_EX_02 {
         painelPrincipal.setLocation(50, 100);//posição do painel no frame 
         painelPrincipal.add(btn);//adiciona botão ao painel
     }
+    
+    private void btn2(){
+        JButton btn = new JButton("2");
+        painelPrincipal.setLocation(50, 100);//posição do painel no frame 
+        painelPrincipal.add(btn);//adiciona botão ao painel
+    }
 }
