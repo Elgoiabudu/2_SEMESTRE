@@ -80,6 +80,8 @@ public class TP_08_EX_02 {
         painelPrincipal.add(btn10);
         painelPrincipal.add(btn11);
         painelPrincipal.add(btn12);
+        
+        
     }
 
     private void mostraJanela() {
