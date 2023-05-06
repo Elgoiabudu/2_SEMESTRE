@@ -69,7 +69,8 @@ public class TP_08_EX_01 {
         painelPrincipal.add(t2);
         painelPrincipal.add(lblr);
         painelPrincipal.add(lbl3);
-    }
+    }    
+    
 
     private void preparaBotaoCarregar() {
         JButton botaoCarregar = new JButton("SOMA");
