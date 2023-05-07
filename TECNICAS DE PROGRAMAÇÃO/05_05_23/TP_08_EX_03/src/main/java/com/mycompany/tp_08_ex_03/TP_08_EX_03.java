@@ -10,6 +10,12 @@ import javax.swing.*;
 /**
  *
  * @author Fernando B. Leonelli
+  
+ * 
+ * Criar  um  frame  contendo  uma  caixa  de texto  onde  o usuário  digita  um  valor numérico  qualquer  referente  à venda. 
+ * Calcular  o ICMS, que corresponde a 18% do valor  da venda  e o IPI, correspondente  a 5%. Em outra caixa  exibir  o Valor Total, 
+ * que é a soma de todos os valores, isto é, Valor da Venda + ICMS + IPI.
+ * 
  */
 public class TP_08_EX_03 {
 

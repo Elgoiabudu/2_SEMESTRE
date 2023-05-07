@@ -8,6 +8,10 @@ import javax.swing.JFrame;
 /**
  *
  * @author Fernando B. Leonelli
+ * 
+ * Elabore  um  frame  que  simule  o teclado  de um  telefone  digital,  de acordo com  a Figura.A cada tecla pressionada o númeroé acumulado  
+ * na caixa de texto. O botão Limpar  apaga todos os números  digitados.
+ * 
  */
 public class TP_08_EX_02 {
 

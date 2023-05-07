@@ -10,6 +10,11 @@ import java.awt.event.*;
 /**
  *
  * @author labs
+ * 
+ * 
+ * No  exemplo   dadoem  sala  de  aula,  acrescentar  botões  para  subtrair,   dividir   e multiplicar  os 2 valores,  exibindo  o resultado.
+ * 
+ * 
  */
 public class TP_08_EX_01 {
 
