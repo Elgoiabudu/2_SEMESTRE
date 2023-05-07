@@ -47,17 +47,17 @@ public class TP_08_EX_02 {
         //setLayout(new BorderLayout());
         
         JButton btn1 = new JButton("1");
-        JButton btn2 = new JButton("1");
-        JButton btn3 = new JButton("1");
-        JButton btn4 = new JButton("1");
-        JButton btn5 = new JButton("1");
-        JButton btn6 = new JButton("1");
-        JButton btn7 = new JButton("1");
-        JButton btn8 = new JButton("1");
-        JButton btn9 = new JButton("1");
-        JButton btn10 = new JButton("1");
-        JButton btn11 = new JButton("1");
-        JButton btn12 = new JButton("1");
+        JButton btn2 = new JButton("2");
+        JButton btn3 = new JButton("3");
+        JButton btn4 = new JButton("4");
+        JButton btn5 = new JButton("5");
+        JButton btn6 = new JButton("6");
+        JButton btn7 = new JButton("7");
+        JButton btn8 = new JButton("8");
+        JButton btn9 = new JButton("9");
+        JButton btn10 = new JButton("#");
+        JButton btn11 = new JButton("0");
+        JButton btn12 = new JButton("*");
         
         
         
