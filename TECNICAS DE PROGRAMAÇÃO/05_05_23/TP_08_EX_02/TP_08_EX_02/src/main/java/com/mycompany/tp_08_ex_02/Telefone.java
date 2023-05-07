@@ -12,8 +12,13 @@ package com.mycompany.tp_08_ex_02;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
-public class Telefone extends JFrame{
+public class Telefone extends JFrame{    
+    
+        
     private JPanel panel;
     private JTextField textField;
 
