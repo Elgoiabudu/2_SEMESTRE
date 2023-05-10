@@ -63,7 +63,9 @@
             <form action="" method="" id="cad_escola_ajax" class="login" autocomplete="off">                                                                            
                     <fieldset>
                         <legend>Dados de cadastro</legend>
+                        <label for="nome_esc">Nome da Escola</label>
                         <input type="text" name="nome_esc" id="nome_esc" class="text-index"  placeholder="DIGITE O NOME DA ESCOLA" required>
+                        <label for="cod_esc">Cód. CIE da Escola</label>
                         <input type="number" name="cod_esc" maxlength="15" class="text-index" placeholder="COD. CIE ESCOLA" required
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" min="0">
                     </fieldset>
