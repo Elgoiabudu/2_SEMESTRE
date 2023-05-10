@@ -82,10 +82,10 @@ function removerAcentos( newStringComAcento ) {
       return string;
   }
 
-function getCEP(cep, id) {
-    
+function getCEP(cep, id) {    
+        
     $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function(data){
-       
+     
 
     try {
        
@@ -110,8 +110,8 @@ function getCEP(cep, id) {
             document.getElementById("cidade_"+id).value = cidade.toUpperCase();
             document.getElementById("estado_"+id).value = estado;
         }
-    } catch (error) {
-     alert(error);
+    } catch (error) {        
+        alert("CEP Invalido!");        
     }
     });
 }

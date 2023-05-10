@@ -65,7 +65,7 @@
                         <legend>Dados de cadastro</legend>
                         <input type="text" name="nome_esc" id="nome_esc" class="text-index"  placeholder="DIGITE O NOME DA ESCOLA" required>
                         <input type="number" name="cod_esc" maxlength="15" class="text-index" placeholder="COD. CIE ESCOLA" required
-                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" min="0">
                     </fieldset>
                     <fieldset>
                         <legend>Endereco</legend>
@@ -90,11 +90,16 @@
             <form action="#" class="login">   
                 <fieldset>
                     <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome</label>
                     <input type="text" name="nome" class="text-index" maxlength="50" placeholder="DIGITE O NOME DO USUARIO"  required>
+                    <label for="sobrenome">Sobrenome</label>
                     <input type="text" name="sobrenome" class="text-index" maxlength="50" placeholder="DIGITE O SOBRENOME DO USUARIO" required>
+                    <label for="email">Email</label>
                     <input type="email" class="text-index" maxlength="50" placeholder="DIGITE O EMAIL DO USUARIO" required>
+                    <label for="cpf">CPF</label>
                     <input type="text" name="cpf" id="cpf" class="text-index" 
                     maxlength="14" onkeyup="getCPF(event)" placeholder="DIGITE O CPF DO USUARIO" required>
+                    <label for="tel">Telefone</label>
                     <input type="tel" name="tel" class="text-index" 
                     maxlength="15" onkeyup="handlePhone(event)" placeholder="DIGITE O TELEFONE DO USUARIO" required>
                 </fieldset>   
@@ -110,12 +115,13 @@
                 
                 <fieldset>
                     <legend>Dados de Acesso</legend>
+                    <label for="escola">Nome da Escola</label>
                     <select name="escola" id="" class="text-index" >
                     <!-- Colocar o while com nome da escola cadastrada -->
-                    </select>
+                    </select>                    
                     <div>
-                        <select name="usuario" id="" class="text-index">
-                            <option>TIPO DE USUARIO</option>
+                        <label for="usuario">Tipo de Usuário</label>
+                        <select name="usuario" id="" class="text-index">                            
                             <option>GESTOR</option>
                             <option>SECRETARIA</option>
                             <option>PROFESSOR COORDENADOR</option>
