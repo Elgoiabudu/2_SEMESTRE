@@ -69,15 +69,18 @@
                         <input type="number" name="cod_esc" maxlength="15" class="text-index" placeholder="COD. CIE ESCOLA" required
                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" min="0">
                     </fieldset>
+                    
                     <fieldset>
                         <legend>Endereco</legend>
                         <label for="cep_esc">Informe o CEP</label>
                         <input type="text" name="cep_esc" id="cep_esc" class="text-index" placeholder="Digite o CEP" onfocusout="getCEP(this.value, 'esc')">
-                        <input type="text" name="rua_esc" id="rua_esc" class="text-index" placeholder="Rua" readonly>
-                        <input type="text" name="bairro_esc" id="bairro_esc" class="text-index" placeholder="Bairro" readonly>
-                        <input type="text" name="cidade_esc" id="cidade_esc" class="text-index" placeholder="Cidade" readonly>                    
-                        <input type="text" name="estado_esc" id="estado_esc" class="text-index" placeholder="Estado" readonly>
-                        <input type="number" name="num_esc" id="num_esc" class="text-index" placeholder="Numero" min="1">
+                        <div id="div_endereco" class="div-endereco-esc">                            
+                            <input type="text" name="rua_esc" id="rua_esc" class="text-index" placeholder="Rua" readonly>
+                            <input type="text" name="bairro_esc" id="bairro_esc" class="text-index" placeholder="Bairro" readonly>
+                            <input type="text" name="cidade_esc" id="cidade_esc" class="text-index" placeholder="Cidade" readonly>                    
+                            <input type="text" name="estado_esc" id="estado_esc" class="text-index" placeholder="Estado" readonly>
+                            <input type="number" name="num_esc" id="num_esc" class="text-index" placeholder="Numero" min="1">
+                        </div>
                     </fieldset>                                          
                     <div>
                         <input type="submit" class="btn" value="Cadastrar">                    
@@ -108,12 +111,15 @@
                 </fieldset>   
                 <fieldset>
                     <legend>Endereco</legend>
+                    <label for="cep_user">Informe o CEP</label>
                     <input type="text" name="cep_user" id="cep_user" class="text-index" placeholder="Digite o CEP" onfocusout="getCEP(this.value, 'user')">
-                    <input type="text" name="rua_user" id="rua_user" class="text-index" placeholder="Rua" disabled>
-                    <input type="text" name="bairro_user" id="bairro_user" class="text-index" placeholder="Bairro" disabled>
-                    <input type="text" name="cidade_user" id="cidade_user" class="text-index" placeholder="Cidade" disabled>                    
-                    <input type="text" name="estado_user" id="estado" class="text-index" placeholder="Estado" disabled>
-                    <input type="number" name="num_user" id="num_user" class="text-index" placeholder="Numero">
+                    <div id="div_enderec" class="div-endereco-esc-use">
+                        <input type="text" name="rua_user" id="rua_user" class="text-index" placeholder="Rua" disabled>
+                        <input type="text" name="bairro_user" id="bairro_user" class="text-index" placeholder="Bairro" disabled>
+                        <input type="text" name="cidade_user" id="cidade_user" class="text-index" placeholder="Cidade" disabled>                    
+                        <input type="text" name="estado_user" id="estado" class="text-index" placeholder="Estado" disabled>
+                        <input type="number" name="num_user" id="num_user" class="text-index" placeholder="Numero">
+                    </div>
                 </fieldset>
                 
                 <fieldset>

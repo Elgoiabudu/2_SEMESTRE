@@ -45,6 +45,14 @@ h2 {
 	margin-bottom: 10px;
 }
 
+.div-endereco-esc{
+	display: none;	
+}
+
+.div-endereco-esc-user{
+	display: none;	
+}
+
 .btn:hover {
 	background-color: #45a049;
 }

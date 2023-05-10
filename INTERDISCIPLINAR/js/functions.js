@@ -62,6 +62,11 @@ function mudarEstado(el, btn) {
 
 }
 
+function visivel(el) {
+    var display = document.getElementById(el).style.display;    
+    document.getElementById(el).style.display = 'block';            
+}
+
 function removerAcentos( newStringComAcento ) {
     var string = newStringComAcento;
       var mapaAcentosHex 	= {
@@ -82,8 +87,11 @@ function removerAcentos( newStringComAcento ) {
       return string;
   }
 
-function getCEP(cep, id) {    
-        
+function getCEP(cep, id) {  
+
+    alert()
+    
+            
     $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function(data){
      
 
@@ -109,9 +117,13 @@ function getCEP(cep, id) {
             document.getElementById("bairro_"+id).value = bairro.toUpperCase();
             document.getElementById("cidade_"+id).value = cidade.toUpperCase();
             document.getElementById("estado_"+id).value = estado;
+            //document.getElementById("div_endereco").style.display = 'block';            
         }
     } catch (error) {        
-        alert("CEP Invalido!");        
+        document.getElementById("div_endereco").style.display = 'none';   
+        //alert("CEP Invalido!");        
+
+        alert(error);
     }
     });
 }
