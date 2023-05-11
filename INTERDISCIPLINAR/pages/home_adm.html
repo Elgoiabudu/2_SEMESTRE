@@ -73,12 +73,12 @@
                     <fieldset>
                         <legend>Endereco</legend>
                         <label for="cep_esc">Informe o CEP</label>
-                        <input type="text" name="cep_esc" id="cep_esc" class="text-index" placeholder="Digite o CEP" onfocusout="getCEP(this.value, 'esc')">
+                        <input type="text" name="cep_esc" id="cep_esc" class="text-index" placeholder="Digite o CEP" onfocusout="getCEP(this.value, 'esc')" required>
                         <input type="text" name="rua_esc" id="rua_esc" class="text-index" placeholder="Rua" readonly>
                         <input type="text" name="bairro_esc" id="bairro_esc" class="text-index" placeholder="Bairro" readonly>
                         <input type="text" name="cidade_esc" id="cidade_esc" class="text-index" placeholder="Cidade" readonly>                    
                         <input type="text" name="estado_esc" id="estado_esc" class="text-index" placeholder="Estado" readonly>
-                        <input type="number" name="num_esc" id="num_esc" class="text-index" placeholder="Numero" min="1">                        
+                        <input type="text" name="num_esc" id="num_esc" class="text-index" placeholder="Numero" min="0" required>                        
                     </fieldset>                                          
                     <div>
                         <input type="submit" class="btn" value="Cadastrar">                    

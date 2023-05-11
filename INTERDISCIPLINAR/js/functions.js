@@ -111,8 +111,7 @@ function getCEP(cep, id) {
         // }
     } catch (error) {                
         alert("CEP Invalido!");                
-        document.getElementById("cep_"+id).value = "";
-        //document.getElementById("cep_"+id).focus();            
+        document.getElementById("cep_"+id).value = "";        
         document.getElementById("rua_"+id).value = "";
         document.getElementById("bairro_"+id).value = "";
         document.getElementById("cidade_"+id).value = "";            
