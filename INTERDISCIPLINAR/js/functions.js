@@ -88,13 +88,9 @@ function removerAcentos( newStringComAcento ) {
   }
 
 function getCEP(cep, id) {  
-
-    alert()
-    
-            
+         
     $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function(data){
-     
-
+   
     try {
        
         var rua = data.logradouro;
@@ -103,27 +99,24 @@ function getCEP(cep, id) {
         var estado = data.uf;
         
         var erro = data.erro;          
-        
-        if (erro) {
-            alert("CEP Invalido!");
-            document.getElementById("cep_"+id).value = "";
-            document.getElementById("cep_"+id).focus();            
-            document.getElementById("rua_"+id).value = "";
-            document.getElementById("bairro_"+id).value = "";
-            document.getElementById("cidade_"+id).value = "";            
-            document.getElementById("estado_"+id).value = ""; 
-        }else{
-            document.getElementById("rua_"+id).value = rua.toUpperCase();
-            document.getElementById("bairro_"+id).value = bairro.toUpperCase();
-            document.getElementById("cidade_"+id).value = cidade.toUpperCase();
-            document.getElementById("estado_"+id).value = estado;
-            //document.getElementById("div_endereco").style.display = 'block';            
-        }
-    } catch (error) {        
-        document.getElementById("div_endereco").style.display = 'none';   
-        //alert("CEP Invalido!");        
 
-        alert(error);
+        document.getElementById("rua_"+id).value = rua.toUpperCase();
+        document.getElementById("bairro_"+id).value = bairro.toUpperCase();
+        document.getElementById("cidade_"+id).value = cidade.toUpperCase();
+        document.getElementById("estado_"+id).value = estado;            
+        
+        // if (erro) {
+        //     alert("CEP Invalido!");
+        // }else{
+        // }
+    } catch (error) {                
+        alert("CEP Invalido!");                
+        document.getElementById("cep_"+id).value = "";
+        //document.getElementById("cep_"+id).focus();            
+        document.getElementById("rua_"+id).value = "";
+        document.getElementById("bairro_"+id).value = "";
+        document.getElementById("cidade_"+id).value = "";            
+        document.getElementById("estado_"+id).value = ""; 
     }
     });
 }
