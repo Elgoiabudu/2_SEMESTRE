@@ -47,15 +47,15 @@ const phoneMask = (value) => {
 }
 
 function mudarEstado(el, btn) {
-    var display = document.getElementById(el).style.display;
+    var display = document.getElementById(el).style.display;    
     do {
         var display = document.getElementById(el).style.display;
         if (display == "none") {
             document.getElementById(el).style.display = 'block';
-            document.getElementById(btn).style.display = 'none';
+            document.getElementById(btn).style.display = 'none';            
         } else {
             document.getElementById(el).style.display = 'none';
-            document.getElementById(btn).style.display = 'block';
+            document.getElementById(btn).style.display = 'block';            
         }
     } while (display == "");
 
@@ -127,4 +127,14 @@ function anoSerie(valor, id) {
         alert("VALOR INVALIDO!");
         alvo.value = "";
     }
+}
+
+function reset(elemento) {
+    var form = document.getElementById(elemento);
+    form.reset();
+}
+
+function serial(id){
+    var dados = $(id).serialize();
+    alert(dados);
 }
