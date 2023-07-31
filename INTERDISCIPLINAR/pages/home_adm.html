@@ -49,7 +49,7 @@
         <input type="button" class="btn_serv" id="btn-cad-esc" onclick="mudarEstado('cad_esc', 'menu-superior')"
             value="CADASTRAR ESCOLA">
 
-        <input type="button" class="btn_serv" id="btn-cad-user" onclick="mudarEstado('cad_aluno','menu-superior')"
+        <input type="button" class="btn_serv" id="btn-cad-aluno" onclick="mudarEstado('cad_aluno','menu-superior')"
             value="CADASTRAR ALUNO">
 
     </div>
@@ -93,67 +93,9 @@
                     <input type="reset" class="btn" onclick="mudarEstado('cad_esc', 'menu-superior')" value="Cancelar">
                 </div>
             </form>
-        </div>
+        </div>        
 
-        <div id="cad_aluno" class="item-index">
-            <div class="sair">
-                <input type="reset" class="btn-sair" onclick="mudarEstado('cad_aluno','menu-superior')" value="X">
-            </div>
-            <h2>CADASTRAR ALUNO</h2>
-            <form action="#" class="login">
-                <fieldset>
-                    <legend>ANO/SERIE</legend>
-                    <label for="rmAluno">RM</label>
-                    <input type="text" name="rmAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O RM DO ALUNO" required>
-                    <label for="raAluno">RA</label>
-                    <input type="text" name="raAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O RA DO ALUNO" required>
-                    <label for="remissivoAluno">ÍNDICE REMISSO</label>
-                    <input type="text" name="remissivoAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O REMISSIVO DO ALUNO" required>
-                    <label for="nomeAluno">NOME</label>
-                    <input type="text" name="nomeAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O NOME DO ALUNO" required>
-                    <label for="nasctoAluno">DATA DE NASCIMENTO</label>
-                    <input type="date" name="nasctoAluno" id="nasctoAluno">
-                </fieldset>
-                <div>
-                    <input type="button" class="btn" value="Cadastrar">
-                    <input type="reset" class="btn" onclick="mudarEstado('cad_aluno','menu-superior')" value="Cancelar">
-                </div>
-            </form>
-        </div>
-
-        <div id="cad_aluno" class="item-index">
-            <div class="sair">
-                <input type="reset" class="btn-sair" onclick="mudarEstado('cad_aluno','menu-superior')" value="X">
-            </div>
-            <h2>CADASTRAR ALUNO</h2>
-            <form action="#" class="login">
-                <fieldset>
-                    <legend>Dados Pessoais</legend>
-                    <label for="rmAluno">RM</label>
-                    <input type="text" name="rmAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O RM DO ALUNO" required>
-                    <label for="raAluno">RA</label>
-                    <input type="text" name="raAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O RA DO ALUNO" required>
-                    <label for="remissivoAluno">ÍNDICE REMISSO</label>
-                    <input type="text" name="remissivoAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O REMISSIVO DO ALUNO" required>
-                    <label for="nomeAluno">NOME</label>
-                    <input type="text" name="nomeAluno" class="text-index" maxlength="50"
-                        placeholder="DIGITE O NOME DO ALUNO" required>
-                    <label for="nasctoAluno">DATA DE NASCIMENTO</label>
-                    <input type="date" name="nasctoAluno" id="nasctoAluno">
-                </fieldset>
-                <div>
-                    <input type="button" class="btn" value="Cadastrar">
-                    <input type="reset" class="btn" onclick="mudarEstado('cad_aluno','menu-superior')" value="Cancelar">
-                </div>
-            </form>
-        </div>
+        
     </div>
 </body>
 
